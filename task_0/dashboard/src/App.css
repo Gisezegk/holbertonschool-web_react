@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 3px solid rgb(197, 27, 27);
+}
+
+.App-header img {
+  width: 200px;
+  height: auto;
+}
+
+.App-header, .App-footer {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+
+.App-body {
+  padding: 20px;
+  text-align: left;
+  border-bottom: 3px solid rgb(197, 27, 27);
+  padding-bottom: 500px;
+
+}
+
+h1 {
+  color: #ca2020;
+  
+}
+
+.App-footer {
+  text-align: center;
+}
