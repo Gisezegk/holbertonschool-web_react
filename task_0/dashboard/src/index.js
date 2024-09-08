@@ -1,17 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// src/index.js
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css'; // Import your global CSS if needed
+import App from './App';
+import Notifications from '../../../react_intro/task_2/dashboard/src/Notifications'; // Import the Notifications component
+
+// Create a div with the class 'root-notifications' if it doesn't exist
+const notificationsRoot = document.createElement('div');
+notificationsRoot.className = 'root-notifications';
+document.body.appendChild(notificationsRoot);
+
+// Render the Notifications component inside the 'root-notifications' div
+ReactDOM.render(
+    <React.StrictMode>
+        <Notifications />
+    </React.StrictMode>,
+    notificationsRoot
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// Render the App component inside the main root div
+ReactDOM.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+    document.getElementById('root')
+);

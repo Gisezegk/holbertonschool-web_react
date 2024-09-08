@@ -4,7 +4,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css'; // Import your global CSS if needed
 import App from './App';
-import Notifications from './Notifications'; // Import the Notifications component
+import Notifications from '../../../task_2/dashboard/src/Notifications'; // Import the Notifications component
 
 // Create a div with the class 'root-notifications' if it doesn't exist
 const notificationsRoot = document.createElement('div');

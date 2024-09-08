@@ -1,5 +1,6 @@
 import React from 'react';
-import './App.css'; // Asegúrate de tener este archivo CSS para los estilos
+import './App.css';
+import { getFullYear, getFooterCopy } from '../../../react_intro/task_2/dashboard/src/utils';
 
 function App() {
     return (
@@ -17,7 +18,8 @@ function App() {
 
             {/* Footer Section */}
             <footer className="App-footer">
-                <p>Copyright 2024 - Holberton School</p>
+              <p>{getFooterCopy(true)}</p> {/* Pass true to get the index footer copy */}
+              <p>Copyright {getFullYear()} - {getFooterCopy(true)}</p> {/* Display the current year */}
             </footer>
         </div>
     );
